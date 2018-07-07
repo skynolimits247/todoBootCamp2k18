@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="todo.js"></script>
+    <title>TO_DO_LIST</title>
+</head>
+<body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+      
+                        <i class="fa fa-history" style="font-size:48px;color:white"></i><a href="" class="navbar-brand">TO DO LIST</a>
+                    </div><!-- Navbar Header-->
+                    <div class="collapse navbar-collapse navbar-center" id="navbar-collapse">
+      
+      
+                        <ul class="nav navbar-nav nav-pills navbar-right" id="todocounter">
+                            
+                          <li><a href="#" id="totaltask"></a>
+                            <li><a href="#" id="taskcompleted"></a>
+                            <li><a href="#" id="taskremaining"></a>
+                          
+                        </ul>
+                    </div>
+                </div><!-- End Container-->
+            </nav><!-- End navbar -->
+
+<div class="container" style="padding-top:15%">
+    <div class="well" style="padding-bottom: 60px;">
+        <div clas="row" style="align-items: center;">
+            <div class="col-sm-6">
+       
+        <input type="text" placeholder="  Add New Task Here....." size="50" id="newtask" value="" style="height: 40px;"> <button type="button" class="btn btn-primary btn-sm" id="addtask" title="Add new tasks">
+             <i class="fa fa-plus" style="font-size:25px"></i>     
+        </button> 
+            </div>
+        </div>
+        <div class="col-md-6"> <button style="font-size:24px" title="Move Down all Completed tasks" id="sortcomplete" class="btn btn-info">Sort <i class="fa fa-sort-amount-desc"></i></button>
+         
+        <button style="font-size:24px" title="Delete Completed tasks" id="deletecomplete" class="btn btn-success">Filter <i class="fa fa-check"></i></button>
+        <button style="font-size:24px" title="Delete List" id="deleteall" class="btn btn-danger">Delete List <i class="fa fa-trash-o"></i></button>
+        </div>
+    </div>
+
+
+        <div class="well">
+                <ul class="list-group" Style="text-align: center;" id="todolist1">
+                        
+                </ul> 
+        </div>
+        
+</div>
+            <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
